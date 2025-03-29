@@ -40,11 +40,10 @@ namespace TinyMicroblog.Post.API.Application.Services
         public async Task<DataResponse<CreateEntityResponseModel>> CreatePostAsync(CreatePostRequestModel model)
         {
             var user = _currentUserService.GetCurrentUser();
-            var (latitude, longitude) = GenerateRandomCoordinates();
             var post = new Domain.Entities.Post
             {
-                Latitude = (decimal)latitude,
-                Longitude = (decimal)longitude,
+                Latitude = model.Latitude,
+                Longitude = model.Longitude,
                 PostText = model.PostText,
                 UserId = user.userId,
                 Username = user.username
@@ -63,17 +62,6 @@ namespace TinyMicroblog.Post.API.Application.Services
             await _serviceBusService.SendNotification(_configuration["AzureServicebusQueues:ConvertToWebpQueue"],
                 new PostCreatedEvent(entityId, user.userId, model.ImageUrl));
             return new DataResponse<CreateEntityResponseModel>().Success(new CreateEntityResponseModel(entityId));
-        }
-
-
-        private (double Latitude, double Longitude) GenerateRandomCoordinates()
-        {
-            var random = new Random();
-
-            double latitude = random.NextDouble() * 180 - 90;  // Range: -90 to 90
-            double longitude = random.NextDouble() * 360 - 180; // Range: -180 to 180
-
-            return (latitude, longitude);
         }
     }
 }

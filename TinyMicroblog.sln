@@ -35,6 +35,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Shared.Upload
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TinyMicroblog.Shared.Settings", "TinyMicroblog.Shared.Settings\TinyMicroblog.Shared.Settings.shproj", "{ECF41CA2-53DE-4C71-8258-E4D82493DA62}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{667FFC7C-DF62-4303-84A3-0E1BCBEFB884}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Post.API.UnitTest", "TinyMicroblog.Post.API.UnitTest\TinyMicroblog.Post.API.UnitTest.csproj", "{F85C4668-3522-49F9-B0A1-C54C40AA3700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Post.API.IntegrationTest", "TinyMicroblog.Post.API.IntegrationTest\TinyMicroblog.Post.API.IntegrationTest.csproj", "{1DC26051-F303-445B-BB77-2AE249976165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Upload.API.IntegrationTest", "TinyMicroblog.Upload.API.IntegrationTest\TinyMicroblog.Upload.API.IntegrationTest.csproj", "{0C469BC2-AACF-4164-8A16-0EEE96A0F58A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +93,18 @@ Global
 		{DA7A8508-17BB-4962-91B2-F4087D773056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA7A8508-17BB-4962-91B2-F4087D773056}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA7A8508-17BB-4962-91B2-F4087D773056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85C4668-3522-49F9-B0A1-C54C40AA3700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85C4668-3522-49F9-B0A1-C54C40AA3700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85C4668-3522-49F9-B0A1-C54C40AA3700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85C4668-3522-49F9-B0A1-C54C40AA3700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC26051-F303-445B-BB77-2AE249976165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC26051-F303-445B-BB77-2AE249976165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC26051-F303-445B-BB77-2AE249976165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC26051-F303-445B-BB77-2AE249976165}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C469BC2-AACF-4164-8A16-0EEE96A0F58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C469BC2-AACF-4164-8A16-0EEE96A0F58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C469BC2-AACF-4164-8A16-0EEE96A0F58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C469BC2-AACF-4164-8A16-0EEE96A0F58A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +120,9 @@ Global
 		{07BE2F27-3D64-4101-990B-4DD15C71B3B1} = {0E8DF081-3508-478F-94C2-3D1AB39A9CAE}
 		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
 		{DA7A8508-17BB-4962-91B2-F4087D773056} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{F85C4668-3522-49F9-B0A1-C54C40AA3700} = {667FFC7C-DF62-4303-84A3-0E1BCBEFB884}
+		{1DC26051-F303-445B-BB77-2AE249976165} = {667FFC7C-DF62-4303-84A3-0E1BCBEFB884}
+		{0C469BC2-AACF-4164-8A16-0EEE96A0F58A} = {667FFC7C-DF62-4303-84A3-0E1BCBEFB884}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		TinyMicroblog.Shared.Settings\TinyMicroblog.Shared.Settings.projitems*{ecf41ca2-53de-4c71-8258-e4d82493da62}*SharedItemsImports = 13
