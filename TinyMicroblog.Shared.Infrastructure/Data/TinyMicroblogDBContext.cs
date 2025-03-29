@@ -7,6 +7,10 @@ namespace TinyMicroblog.Shared.Infrastructure.Data;
 
 public partial class TinyMicroblogDBContext : DbContext
 {
+    public TinyMicroblogDBContext()
+    {
+    }
+
     public TinyMicroblogDBContext(DbContextOptions<TinyMicroblogDBContext> options)
         : base(options)
     {

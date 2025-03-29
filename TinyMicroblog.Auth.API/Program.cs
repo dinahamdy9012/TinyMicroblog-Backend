@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Reflection;
 using TinyMicroblog.Auth.API;
 using TinyMicroblog.Shared.Infrastructure;
+using TinyMicroblog.Shared.Infrastructure.Data;
 using TinyMicroblog.Shared.Infrastructure.Settings;
 using TinyMicroblog.Shared.Middlewares;
 
@@ -51,5 +54,11 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<TinyMicroblogDBContext>();
+    dbContext.Database.Migrate(); // Applies any pending migrations
+}
 
 app.Run();
