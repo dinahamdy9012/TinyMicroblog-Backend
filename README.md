@@ -9,5 +9,10 @@ run ng serve
 
 backend
 set these projects as startup projects
+"TinyMicroblog.Auth.API"
+"TinyMicroblog.Post.API"
+"Upload.API"
+"TinyMicroblog.BackgroundJobs"
+
 Go to "TinyMicroblog.Shared.Settings" and update the db connection string "TinyMicroblogDB" in "sharedsettings.Development"
 and run
