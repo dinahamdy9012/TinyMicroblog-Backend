@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\TinyMicroblog.Shared.Settings\sharedsettings.Development.json" Link="sharedsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedKernel\TinyMicroblog.SharedKernel.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Servicbus\TinyMicroblog.Servicbus.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.Application\TinyMicroblog.Shared.Application.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.Infrastructure\TinyMicroblog.Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared\TinyMicroblog.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Enums\" />
+  </ItemGroup>
+
+</Project>

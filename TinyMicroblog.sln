@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35521.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Domain", "TinyMicroblog.Domain\TinyMicroblog.Domain.csproj", "{AF6FF639-BF11-4589-967E-011D29713D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Auth.API", "TinyMicroblog.Auth.API\TinyMicroblog.Auth.API.csproj", "{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Post.API", "TinyMicroblog.Post.API\TinyMicroblog.Post.API.csproj", "{020314D5-9B4F-419A-BE5C-42E575C160A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Shared.Infrastructure", "TinyMicroblog.Shared.Infrastructure\TinyMicroblog.Shared.Infrastructure.csproj", "{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Shared.Application", "TinyMicroblog.Shared.Application\TinyMicroblog.Shared.Application.csproj", "{E3729F10-4CC3-4854-9A79-E2B4C21F7B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Shared", "TinyMicroblog.Shared\TinyMicroblog.Shared.csproj", "{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{C7C8452F-EE5A-4B61-876D-946489045287}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Post", "Post", "{8006F344-5BB9-4976-A125-D7B40340E824}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.SharedKernel", "SharedKernel\TinyMicroblog.SharedKernel.csproj", "{77A85803-D2C2-4848-8F48-059009CF609B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Upload", "Upload", "{0E8DF081-3508-478F-94C2-3D1AB39A9CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Upload.API", "Upload.API\Upload.API.csproj", "{07BE2F27-3D64-4101-990B-4DD15C71B3B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.BackgroundJobs", "TinyMicroblog.BackgroundJobs\TinyMicroblog.BackgroundJobs.csproj", "{A672995B-1E7B-4053-BA94-60571FC48F1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Servicbus", "TinyMicroblog.Servicbus\TinyMicroblog.Servicbus.csproj", "{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyMicroblog.Shared.UploadService", "TinyMicroblog.Shared.UploadService\TinyMicroblog.Shared.UploadService.csproj", "{DA7A8508-17BB-4962-91B2-F4087D773056}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "TinyMicroblog.Shared.Settings", "TinyMicroblog.Shared.Settings\TinyMicroblog.Shared.Settings.shproj", "{ECF41CA2-53DE-4C71-8258-E4D82493DA62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF6FF639-BF11-4589-967E-011D29713D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6FF639-BF11-4589-967E-011D29713D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6FF639-BF11-4589-967E-011D29713D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6FF639-BF11-4589-967E-011D29713D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020314D5-9B4F-419A-BE5C-42E575C160A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020314D5-9B4F-419A-BE5C-42E575C160A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020314D5-9B4F-419A-BE5C-42E575C160A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020314D5-9B4F-419A-BE5C-42E575C160A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3729F10-4CC3-4854-9A79-E2B4C21F7B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3729F10-4CC3-4854-9A79-E2B4C21F7B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3729F10-4CC3-4854-9A79-E2B4C21F7B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3729F10-4CC3-4854-9A79-E2B4C21F7B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A85803-D2C2-4848-8F48-059009CF609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A85803-D2C2-4848-8F48-059009CF609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A85803-D2C2-4848-8F48-059009CF609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A85803-D2C2-4848-8F48-059009CF609B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07BE2F27-3D64-4101-990B-4DD15C71B3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07BE2F27-3D64-4101-990B-4DD15C71B3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07BE2F27-3D64-4101-990B-4DD15C71B3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07BE2F27-3D64-4101-990B-4DD15C71B3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A672995B-1E7B-4053-BA94-60571FC48F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A672995B-1E7B-4053-BA94-60571FC48F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A672995B-1E7B-4053-BA94-60571FC48F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A672995B-1E7B-4053-BA94-60571FC48F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7A8508-17BB-4962-91B2-F4087D773056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7A8508-17BB-4962-91B2-F4087D773056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7A8508-17BB-4962-91B2-F4087D773056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7A8508-17BB-4962-91B2-F4087D773056}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF6FF639-BF11-4589-967E-011D29713D14} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{1FBA9080-145E-4A87-B5DE-11FCB6FD34C4} = {C7C8452F-EE5A-4B61-876D-946489045287}
+		{020314D5-9B4F-419A-BE5C-42E575C160A4} = {8006F344-5BB9-4976-A125-D7B40340E824}
+		{FFE1CAD6-3D73-424F-A94A-94E4C83A4C03} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{E3729F10-4CC3-4854-9A79-E2B4C21F7B82} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{DBEB674D-89D8-417D-A05F-A7C8DB22ECEE} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{77A85803-D2C2-4848-8F48-059009CF609B} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{07BE2F27-3D64-4101-990B-4DD15C71B3B1} = {0E8DF081-3508-478F-94C2-3D1AB39A9CAE}
+		{4F6F2B5F-4D10-4F4B-B48D-B9B30DCA9C93} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+		{DA7A8508-17BB-4962-91B2-F4087D773056} = {E193EDE9-5A51-44B5-B6E8-7A775ACE9DFD}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		TinyMicroblog.Shared.Settings\TinyMicroblog.Shared.Settings.projitems*{ecf41ca2-53de-4c71-8258-e4d82493da62}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "TinyMicroblogDB": "Server=.;Database=TinyMicroblogDB;Trusted_Connection=True;TrustServerCertificate=True;Command Timeout=300;",
+    "ServiceBus": "Endpoint=sb://tinymicroblognotifications.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JBjD80ru1X+OJWrle0/IxKtFFcQurofqE+ASbH58YyQ=",
+    "AzureStorage": "DefaultEndpointsProtocol=https;AccountName=tinymicroblogstorage;AccountKey=LNJSPzRnyqwcoXa2VNfClRwFtvVg5oWLsh8aStpZvzgw2nPOeyO2Wm+xA4wOD4pd3CWd+zTFJN5j+AStr5iz5Q==;EndpointSuffix=core.windows.net"
+  },
+  "JwtSettings": {
+    "Secret": "your_secret_key_here_should_be_long",
+    "Issuer": "TinyMicroblogAPI",
+    "Audience": "TinyMicroblogUsers",
+    "AccessTokenExpirationMinutes": 1440,
+    "RefreshTokenExpirationDays": 7
+  },
+  "AzureServicebusQueues": {
+    "ConvertToWebpQueue": "converttowebpqueue",
+    "UpdatePostQueue": "updatepostqueue"
+  },
+  "AzureContainers": {
+    "PostsPermenantContainer": "postsimages",
+    "PostsTempContainer": "temppostsimages"
+  },
+  "AzureStorageURL": "https://tinymicroblogstorage.blob.core.windows.net/"
+}

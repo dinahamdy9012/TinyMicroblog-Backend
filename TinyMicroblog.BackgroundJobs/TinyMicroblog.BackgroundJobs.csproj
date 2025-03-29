@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-TinyMicroblog.BackgroundJobs-29f093ea-093a-4b62-8ad1-ba0ce854d8a4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\TinyMicroblog.Shared.Settings\sharedsettings.Development.json" Link="sharedsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.18.4" />
+    <PackageReference Include="Hangfire" Version="1.8.18" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedKernel\TinyMicroblog.SharedKernel.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Servicbus\TinyMicroblog.Servicbus.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.Application\TinyMicroblog.Shared.Application.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.Infrastructure\TinyMicroblog.Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.UploadService\TinyMicroblog.Shared.UploadService.csproj" />
+  </ItemGroup>
+</Project>

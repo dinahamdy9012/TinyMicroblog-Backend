@@ -1,0 +1,6 @@
+@TinyMicroblog.Post.API_HostAddress = http://localhost:5115
+
+GET {{TinyMicroblog.Post.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

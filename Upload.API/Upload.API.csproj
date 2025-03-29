@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\TinyMicroblog.Shared.Settings\sharedsettings.Development.json" Link="sharedsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Application\UseCases\Upload\UploadPostImageCommand.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.24.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SharedKernel\TinyMicroblog.SharedKernel.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.Infrastructure\TinyMicroblog.Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared.UploadService\TinyMicroblog.Shared.UploadService.csproj" />
+    <ProjectReference Include="..\TinyMicroblog.Shared\TinyMicroblog.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
